@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: inline-block;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background:url('images/contact_bg.jpg') no-repeat center center/cover;
+    background-color:black;
+    background-position: center;
+}
+.hero .contact-title{
+  margin-top: 75px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+}
+.contact-title h1{
+  font-size: 32px;
+  line-height: 10px;
+  margin-bottom: 20px;
+}
+.contact-title h2{
+  font-size: 16px;
+}
+form{
+  width: 670px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(225, 225, 225, 0.1);
+  backdrop-filter: blur(1.5px);
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 300px;
+  text-align: center;
+  align-items: center;
+}
+/* form input{
+  width: 290px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+} */
+::placeholder{
+
+color: rgb(245, 245, 245);
+
+}
+.form-control{
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(189, 184, 194);
+  color: white;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+input{
+  height: 45px;
+}
+form .submit{
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #333;
+  width: 100px;
+  padding: 0;
+  margin-bottom: 30px;
+  transition: 0.3s;
+  
+}
+form .submit:hover{
+    background: rgb(151, 141, 141);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+/* Nav bar styling */
+nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: linear-gradient(135deg, rgba(196,123,4,1) 0%, rgba(0,0,0,1) 100%);
+    width: 60px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+
+}
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    width: 25px;
+}
+.logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+a{
+    position: relative;
+    color: white;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 20px;
+}
+.fas, .fa-solid{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+a:hover{
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%,  rgba(196,123,4,1) 100%);
+}
+nav:hover{
+    width: 240px;
+    transition: all 0,5s ease;
+}

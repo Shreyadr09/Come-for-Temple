@@ -1,0 +1,74 @@
+  * {
+      box-sizing: border-box;
+  }
+
+
+  #outdone {
+      visibility: hidden;
+  }
+
+  #outconfirmation {
+      visibility: hidden;
+  }
+
+  .extra {
+      background: transparent;
+      position: fixed;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+  }
+
+  .circle {
+      /* position: relative; */
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      top: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+  }
+
+  .cancel_btn {
+      background: linear-gradient(to right, #235d75, #1f6984, #2fa1d6);
+      -webkit-text-fill-color: transparent;
+      /* -webkit-background-clip: text; */
+  }
+
+
+
+  .logout_main {
+      background: linear-gradient(to right, #235d75, #1f6984, #2fa1d6);
+      width: 350px;
+      height: 200px;
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px;
+      color: white;
+  }
+
+  .logout_done {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .logout_head {
+      margin: 10px 0px;
+  }
+
+  .btns {
+      margin-top: 20px;
+      display: flex;
+      
+      
+  }
+  

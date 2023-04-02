@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Gruppo");
+@import url("https://fonts.googleapis.com/css?family=Poiret One");
+@import url("https://fonts.googleapis.com/css?family=Aboreto");
+@import url("https://fonts.googleapis.com/css?family=Josefin Sans");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* about us styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #010316;
+  background-image: url("images/aboutus_bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.Abtus {
+  font-size: 100px;
+  text-align: center;
+  color: rgb(255, 200, 128);
+  /* font-family: "";
+     */
+  font-family: "Itim", cursive;
+  text-shadow: 6px 6px 6px #777676;
+}
+.about-section {
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  line-height: 30px;
+  margin-left: 90px;
+  width: 50%;
+  text-align: left;
+  margin-top: 100px;
+  font-family: "Aboreto";
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.ourteam {
+  margin-left: 90px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  line-height: 20px;
+  width: 50%;
+  text-align: left;
+  font-family: "Aboreto";
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+.ourteam a {
+  margin-bottom: 20px;
+  /* margin-left: -19px; */
+  color: rgb(77, 77, 255);
+  text-decoration: underline;
+}
+.ourteam a:hover {
+  color: rgb(77, 175, 255);
+  background: none;
+}
+
+.row {
+  margin-left: 200px;
+  padding: 3%;
+  width: 900px;
+  height: 500px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(225, 225, 225, 0.1);
+  backdrop-filter: blur(15px);
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 10px;
+}
+.card {
+  box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.4);
+  margin: 10px;
+}
+.container {
+  padding: 30px 20px;
+  color: white;
+  font-family: "Josefin Sans";
+  font-size: 12px;
+  line-height: 20px;
+}
+
+
+.title {
+  color: rgb(232, 223, 223);
+  font-size: 14px;
+}
+
+.bottom {
+  margin-top: 20px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(253, 242, 143);
+  text-align: center;
+  /* cursor: pointer; */
+  width: 100%;
+}
+.row .column img {
+  margin-left: 70px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+
+
+/* Nav bar styling */
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(150deg, #7f8c8d, #000000);
+  width: 60px;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease;
+  width: 25px;
+}
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+nav a {
+  position: relative;
+  color: white;
+  font-size: 14px;
+  display: table;
+  width: 300px;
+  padding: 20px;
+}
+.fas,
+.fa-solid {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+}
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+nav a:hover {
+  background: linear-gradient(115deg, #000000, #7f8c8d);
+}
+nav:hover {
+  width: 240px;
+  transition: all 0, 5s ease;
+}

@@ -1,0 +1,109 @@
+//table-temple1
+
+INSERT INTO Temple1 (darshan_image, darshan_name, darshan_price)
+        VALUES ('./upload/image1.jpg','Archane',60),
+('./upload/image2.jpeg','Prasada',70),
+('./upload/image3.jpg','Kunkuma Archane',100),
+('./upload/image4.png','Abhisheka Prasada',150),
+('./upload/image5.jpg','Thulaabhara',600),
+('./upload/image6.jpg','Anna Prasaadam',200)
+
+
+
+
+//table-temple2
+
+//1st execute this query
+
+
+ALTER TABLE `table_name` AUTO_INCREMENT = 7;
+
+
+//then this
+
+
+INSERT INTO Temple2 (darshan_image, darshan_name, darshan_price)
+        VALUES ('./upload/image1.jpg','Swarna Abhisheka',560),
+('./upload/image2.jpeg','Panchakajjaya Prasada',170),
+('./upload/image3.jpg','Kunkuma Archane',100),
+('./upload/image4.png','Abhisheka Prasada',180),
+('./upload/image5.jpg','Thulaabhara',400),
+('./upload/image6.jpg','Anna Prasaadam',200)
+
+
+//table-temple3
+
+//1st execute this query
+
+
+ALTER TABLE `table_name` AUTO_INCREMENT = 13;
+
+
+//then this
+
+
+ INSERT INTO Temple3 (darshan_image, darshan_name, darshan_price)
+        VALUES ('./upload/image1.jpg','Divya Darshanam',320),
+('./upload/image2.jpeg','Prasada',70),
+('./upload/image3.jpg','Kunkuma Archane',100),
+('./upload/image4.png','Abhisheka Prasada',150),
+('./upload/image5.jpg','Upanayana',580),
+('./upload/image6.jpg','Anna Prasaadam',200)
+
+
+
+//table-temple4
+
+//1st execute this query
+
+
+ALTER TABLE `table_name` AUTO_INCREMENT = 19;
+
+
+//then this
+
+
+ INSERT INTO Temple4 (darshan_image, darshan_name, darshan_price)
+        VALUES ('./upload/image1.jpg','Archane',60),
+('./upload/image2.jpeg','Swarna Abhisheka',70),
+('./upload/image3.jpg','Kunkuma Archane',140),
+('./upload/image4.png','Divya Darshanam',150),
+('./upload/image5.jpg','Thulaabhara',600),
+('./upload/image6.jpg','Anna Prasaadam',200)
+
+
+
+//table-temple5
+
+//1st execute this query
+
+
+ALTER TABLE `table_name` AUTO_INCREMENT = 25;
+
+
+//then this
+
+
+INSERT INTO Temple5 (darshan_image, darshan_name, darshan_price)
+        VALUES ('./upload/image1.jpg','Panchakajjaya Prasada',160),
+('./upload/image2.jpeg','Upanayana',700),
+('./upload/image3.jpg','Kunkuma Archane',70),
+('./upload/image4.png','Abhisheka Prasada',120),
+('./upload/image5.jpg','Thulaabhara',280),
+('./upload/image6.jpg','Anna Prasaadam',400)
+
+
+
+//for login
+CREATE TABLE users (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+
+
+

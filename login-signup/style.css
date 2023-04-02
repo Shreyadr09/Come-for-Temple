@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* .wrapper{
+    width: 1170px;
+    margin: auto;
+} */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/temple.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    width: 200px;
+    margin-right: 10px;
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.content {
+    visibility: visible;
+    color: #fbfcfd;
+    position: absolute;
+    top: 70%;
+    right: 7%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+/* .side-bar{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(#00545d, #000729);
+    position: absolute;
+    right: 0;
+    top: 0;
+} */
+.menu {
+    display: block;
+    width: 25px;
+    margin: 28px auto 0;
+    cursor: pointer;
+}
+
+.petals img {
+    width: 50px;
+    animation: petal 7s linear infinite;
+}
+
+.petals {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: -25px;
+}
+
+@keyframes petal {
+    0% {
+        transform: translateY(0);
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(80vh);
+        opacity: 0.5;
+    }
+}
+
+.petals img:nth-child(1) {
+    animation-delay: 2s;
+    width: 30px;
+}
+
+.petals img:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.petals img:nth-child(3) {
+    animation-delay: 3s;
+    width: 60px;
+}
+
+.petals img:nth-child(4) {
+    animation-delay: 4.5s;
+}
+
+.petals img:nth-child(5) {
+    animation-delay: 3s;
+    width: 50px;
+}
+
+.petals img:nth-child(6) {
+    animation-delay: 6s;
+    width: 45px;
+}
+
+.petals img:nth-child(7) {
+    animation-delay: 7s;
+    width: 40px;
+}
+
+/* Nav bar styling */
+nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: linear-gradient(#00545d, #000729);
+    width: 60px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+
+}
+.navbar{
+    position: relative;
+}
+
+.navbar .logo{
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: 5px;
+    right: -50px;
+}
+.logo {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    width: 25px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+a {
+    position: relative;
+    color: white;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 20px;
+}
+
+.left_icons {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+}
+
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+a:hover {
+    background: linear-gradient(115deg, #235d75, #1f6984,
+            #2fa1d6);
+}
+
+nav:hover {
+    width: 240px;
+    transition: all 0, 5s ease;
+}
+
+
+/* login styling */
+#loginform {
+    visibility: hidden;
+}
+
+#myModal {
+    visibility: hidden;
+}
+
+  /* Increase the size of the user icon */
+  .fa-solid.fa-user {
+    font-size: 50px;
+  }
+
+  /* Shift the span element towards the right */
+  li a span {
+    margin-left: 10px;
+  }

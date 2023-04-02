@@ -1,0 +1,196 @@
+body{
+
+  background-color: black;
+   background-image:url("images/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+    overflow: hidden;
+}
+
+.main{
+  position:relative;
+  height:100vh;
+  width:140vh;
+ 
+}
+
+.temple{
+    position:absolute;
+    top:10%;
+    left:45%;
+    animation-name:temple;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+  
+}
+@keyframes temple
+{
+  0%{opacity:0;}
+  100%{opacity: 1;}
+}
+   
+
+/* when hovered on temple */
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+  }
+a{
+  text-decoration:none;
+}
+.temple:hover .image{
+   filter:brightness(150%);
+    transition-duration: 1s;
+
+}
+.temple:hover .middle {
+    opacity: 1;
+  }
+
+.text {
+   
+    color: white;
+    font-weight: 500;
+    background-color: rgb(170, 142, 142);
+    border-radius: 2000px;
+    box-shadow: 0 0 4px 0 rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 16px 32px;
+
+  }
+.text img{
+    position:absolute;
+    top: 25px;
+    left:-100px;
+    /* transform: scaleY(-1); */
+}
+.seva{
+    position:absolute;
+    bottom:0%;
+    left:27%;
+    animation-name:seva;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+   
+}
+@keyframes seva{
+    0%   { left: -300px;}
+    100%   { left:27%;}
+}
+.seva:hover .image{
+    filter: brightness(150%);
+    transition-duration: 1s;
+
+}
+.seva:hover .middle1 {
+    opacity: 1;
+   
+  }
+/* when hovered on the girl */
+.middle1 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: -7%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+   
+   
+  }
+  .darshan{
+    position:absolute;
+    bottom:-4%;
+    right:25%;
+    animation-name:darshan;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+
+  }
+  
+@keyframes darshan{
+    0%   { right: -300px;}
+    100%   { right:25%;}
+}
+.middle2 {
+    /* background-image: url("images/chatbox.png"); */
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: -10%;
+    right: -9%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+   
+   
+  }
+.darshan:hover .image{
+   filter: brightness(150%);
+    transition-duration: 1s;
+
+}
+.darshan:hover .middle2 {
+    opacity: 1;
+   
+  }
+
+  nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: linear-gradient(135deg, rgba(196,123,4,1) 0%, rgba(0,0,0,1) 100%);
+    width: 60px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+
+}
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    width: 25px;
+    
+}
+.logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    
+}
+.abcd{
+    position: relative;
+    color: white;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 20px;
+    left:-45px;
+}
+.fas, .fa-solid{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+.abcd:hover{
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%,  rgba(196,123,4,1) 100%);
+}
+nav:hover{
+    width: 240px;
+    transition: all 0,5s ease;
+}

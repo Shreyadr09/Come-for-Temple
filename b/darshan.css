@@ -1,0 +1,192 @@
+/* 
+    ================================
+        Best Viewed In Full Page
+    ================================
+*/
+
+/* Hover over a card to flip, can tab too. */
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* default */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+
+
+/* .flip-card-container */
+.flip-card-container {
+  position:sticky;
+  top:15%;
+  /* bottom:5%; */
+  left:20px;
+  --hue: 150;
+  --primary: hsl(var(--hue), 50%, 50%);
+  --white-1: hsl(0, 0%, 90%);
+  --grey: hsl(0, 0%, 50%);
+  color:white;
+  width: 350px;
+  height: 550px;
+  margin-top: 5%; 
+  margin-bottom: 5%;
+   /*Bro manually change height width and margin*/
+
+}
+
+/* .flip-card */
+.flip-card {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .6s .1s;
+}
+
+/* hover and focus-within states */
+.flip-card-container:hover .flip-card {
+  transform: rotateY(180deg);
+}
+
+/* .card-... */
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  box-shadow: 0 0 3px 0 rgb(134, 134, 134);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  backface-visibility: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .card-front */
+.card-front {
+  transform: rotateY(0deg);
+  z-index: 2;
+  
+}
+
+/* .card-back */
+.card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+/* figure */
+figure {
+  z-index: -1;
+}
+
+/* figure, .img-bg */
+figure,
+.img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* figcaption */
+figcaption {
+  display: block;
+
+  width: auto;
+  margin-top: 12%;
+
+  padding: 22px 22px;
+    font-size: large;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  text-align: center;
+    font-weight: 400;
+  position: absolute;
+  top: 60%;
+  right: 0%;
+
+  color: var(--white-1);
+  background: hsla(var(--hue), 25%, 10%, .5);
+  box-shadow: 0 0px 4px 2px var(--primary);
+}
+
+
+.card-front .img-bg::before {
+  content: "";
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(18deg);
+  width: 120%;
+  height: 6px;
+  transition: .1s;
+}
+
+
+
+/* ul */
+ul{
+  margin: 0 auto;
+  width: 70%;
+  height: 70%;
+  list-style: none;
+  color: var(--white-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* li */
+li {
+  width: 60%;
+  margin-top: 12px;
+  font-size: 14px;
+  text-align: center;
+
+  position: relative;
+  
+    font-family: inherit;
+    font-weight: bold;
+    color: var(--white-1);
+  
+    letter-spacing: 2px;
+  
+    padding: 9px 9px;
+    border: 1px solid var(--grey);
+    border-radius: 1000px;
+    background: transparent;
+    transition: .3s;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+li:hover,
+li:focus{
+  color: var(--primary);
+  background: hsla(var(--hue), 25%, 10%, .2);
+  border-color: currentColor;
+  cursor: pointer;
+  text-decoration: none;
+ 
+}
